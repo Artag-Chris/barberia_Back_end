@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h6>Agendar Citas:</h6>
+   
+
+    <form action="/add/citas" method="post">
+        <div>
+            <select class="p-2" name="citasBarberos">Seleccione...
+                <% barberos.map(item=>{
+                    %>  <option value="<%= item.datos.nombres %>"><%= item.datos.nombres %></option>  <%} ) %>
+            </select>
+        </div>
+      
+        <div class="col-lg p-4 rounded-lg" style="border:solid 1px gray;">
+            <div class="pt-3">
+                <h6>2. SELECCIONE EL DÍA.</h6>
+                <input type="date" name="date" id="bi-calendar-date" style="width:100%">
+            </div>
+        </div>
+        <div class="col-lg p-4 rounded-lg" style="border:solid 1px gray;">
+            <div class="pt-3">
+                <h6>2. SELECCIONE la hora</h6>
+                <input type="time" name="time" id="bi-calendar-date" style="width:100%">
+            </div>
+        </div>
+        <button type="submit">Agendar</button>
+    </form>
+</body>
+
+</html>

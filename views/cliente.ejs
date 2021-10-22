@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cliente Info</title>
+</head>
+<body>
+    <form action="/cliente/post/<%=clienteInfo.id %>" method="get" >
+        <input type="text" name="nombres" value=<%= clienteInfo.datos.nombres %>>
+        <input type="text" name="apellido" value=<%= clienteInfo.datos.apellido %>>
+        <input type="text" name="email" value=<%= clienteInfo.datos.telefono %>>
+        <input type="text" name="telefono" value=<%= clienteInfo.datos.email %>>
+        <input type="text" name="documento" value=<%= clienteInfo.datos.documento %>>
+        <input type="text-field" name="comentario" value=<%= clienteInfo.datos.comentario %>>
+        <input type="text" name="id" value=<%= clienteInfo.id %> disabled="true">
+        <button type="submit">Update</button>        
+  </form>
+</body>
+</html>

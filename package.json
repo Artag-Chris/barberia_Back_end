@@ -1,0 +1,30 @@
+{
+  "name": "barberia",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "ejs": "^3.1.6",
+    "esm": "^3.2.25",
+    "express": "^4.17.1",
+    "firebase": "^9.1.2",
+    "node": "^16.10.0",
+    "nodemon": "^2.0.13"
+  },
+  "devDependencies": {
+    "@babel/helper-compilation-targets": "^7.15.4"
+  },
+  "scripts": {
+    "start": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon index.js"
+  },
+  "exports": {
+    "./config/": "./config/firebaseconfig.js/"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

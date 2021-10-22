@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>get citas</title>
+</head>
+
+<body>
+    <h2>gestion de datos de las citas</h2>
+    <% citas.map(item=>{
+         %>
+         <form action="" method="post">
+        <input type="text" name="nombres" value="<%= item.datos.nombreBarbero %>">
+        <input type="text" name="apellido" value="<%= item.datos.fecha %>">
+        <input type="text" name="email" value="<%= item.datos.hora %>">
+        
+        <button type="submit">Guardar</button>
+        <hr>
+        <hr>
+        <% citas.map(item=>{
+             %> 
+        
+        <a href="citas/delete/<%= item.id %>">Delete</a>
+        <%} ) %>
+    </form>
+
+    <%} ) %>
+
+</body>
+
+</html>

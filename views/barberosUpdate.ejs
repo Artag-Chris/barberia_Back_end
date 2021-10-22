@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barberos update</title>
+
+</head>
+<body>
+     <form action="/barbero/post/<%=barberoInfo.id %>" method="get" >
+        <input type="text" name="nombres" value=<%= barberoInfo.datos.nombres %>>
+        <input type="text" name="apellido" value=<%= barberoInfo.datos.apellido %>>
+        <input type="text" name="email" value=<%= barberoInfo.datos.telefono %>>
+        <input type="text" name="telefono" value=<%= barberoInfo.datos.email %>>
+        <input type="text" name="documento" value=<%= barberoInfo.datos.documento %>>
+        <input type="text-field" name="experiencia" value=<%= barberoInfo.datos.experiencia %>>
+        <input type="text" name="id" value=<%= barberoInfo.id %> disabled="true">
+        <button type="submit">Update</button>        
+  </form>
+</body>
+</html>

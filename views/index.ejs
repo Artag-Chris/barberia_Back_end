@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barberia</title>
+</head>
+
+<body>
+    <h2>gestion de datos del cliente</h2>
+    <form action="add" method="post">
+        <input type="text" name="nombres" placeholder="Nombre">
+        <input type="text" name="apellido" placeholder="Apellido">
+        <input type="text" name="email" placeholder="E-mail">
+        <input type="text" name="telefono" placeholder="Telefono">
+        <input type="text" name="documento" placeholder="Documento">
+        <input type="text" name="comentario" placeholder="Escribe aqui...">
+        <button type="submit">Guardar</button>
+        <hr>
+        <hr>
+        <% cliente.map(item=>{
+             %>
+        <a href="cliente/<%= item.id %>"><%= item.datos.nombres %> </a>
+        <a href="delete/<%= item.id %>">Delete</a>
+        <%} ) %>
+    </form>
+    <br>
+    <br>
+    <br>
+    <h2>gestion de datos del Barbero</h2>
+    <form action="add/barber" method="post">
+        <input type="text" name="nombreBarbero" placeholder="Nombre Barbero">
+        <input type="text" name="apellidoBarbero" placeholder="Apellido Barbero">
+        <input type="text" name="emailBarbero" placeholder="E-mail Barbero">
+        <input type="text" name="telefonoBarbero" placeholder="Telefono Barbero">
+        <input type="text" name="documentoBarbero" placeholder="Documento Barbero">
+        <input type="text" name="experiencia" placeholder="Escribe sus años de exp">
+        <button type="submit">Guardar</button>
+
+        <form />
+        <br>
+        <br>
+        <br>
+       
+</body>
+
+</html>
