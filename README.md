@@ -1,4 +1,5 @@
 server de la aplicación web barberia g37
+https://barberiag372021.herokuapp.com/        ya esta en deploy en heroku 
 
 creada con express y para final visuales mientras se programaba use ejs para renderizar la data que se RECIBÍA de la base de datos en este caso use firebase9
 
