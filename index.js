@@ -5,7 +5,7 @@ import cors from 'cors';
 import { db } from "./config/firebaseconfing.js"
 
 const app = express();
-const PORT = 5000;
+const PORT = process.env.PORT || 5000;
 const refcliente = collection(db, "cliente")
 
 //se pone en linea el server
